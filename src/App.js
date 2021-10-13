@@ -14,7 +14,7 @@ const App = () => {
     if (speechState === SpeechState.Recording) {
       executeScroll();
     }
-  },[])
+  },[speechState])
   return (
     <div>
       <Grid
