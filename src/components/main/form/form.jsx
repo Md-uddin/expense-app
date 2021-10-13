@@ -56,7 +56,7 @@ const Form = () => {
                 createTransaction();
             }
       }  
-    },[segment])
+    },[segment,createTransaction])
     const onFormchange = (e) => {
         if ( e.target.name === 'date'){setFormData({ ...formData, [e
             .target.name]: FormatDate(e.target.value)
